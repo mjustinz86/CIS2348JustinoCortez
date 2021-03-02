@@ -22,6 +22,9 @@ for info_file in import_file:
                     month = str(x + 1)
                     ans = month + '/' + day + '/' + year
                     print(ans)
+                    file_import = open('parsedDates.txt', 'w')
+                    file_import.write(ans)
+                    file_import.close()
                     break
         except ValueError:
             continue
